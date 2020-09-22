@@ -12,6 +12,15 @@ export default {
   components: {
     Grid
   },
+  data () {
+    return {
+      matches:0,
+      wins:{
+        O:0,
+        X:0
+      }
+    }
+  }
 };
 </script>
 

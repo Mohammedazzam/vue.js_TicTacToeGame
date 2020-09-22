@@ -7,6 +7,12 @@
 <script>
 export default {
     name:"Cell",
+    data () {
+        return {
+            mark:"",
+            canPlaceMark:false
+        }
+    }
 }
 </script>
 

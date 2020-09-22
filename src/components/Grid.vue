@@ -12,6 +12,25 @@ export default{
     name:"Grid",
     components: {
         Cell
+    },
+    data () {
+        return {
+            activePlayer:"O",
+            gameStatus:"turn",
+            gameStatusMessage:"O's Turn",
+            gameStatusColor:"statusTurn",
+            moves:0,
+            winConditions:[
+                [1,2,3],[4,5,6],[7,8,9] //row
+                [1,4,7],[2,5,8],[3,6,9] //columns
+                [1,5,9],[3,5,7] //diagonals
+            ],
+            cells:{
+                1:"",2:"",3:"",
+                4:"",5:"",6:"",
+                7:"",8:"",9:""
+            }
+        }
     }
 }
 
