@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Tic-Tac-Toe Game</h1>
+    <Grid />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Grid from './components/Grid'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Grid
+  },
+};
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+  max-width: 400px;
 }
+
+#app h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+
 </style>
